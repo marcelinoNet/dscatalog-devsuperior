@@ -84,15 +84,15 @@ public class ProductServiceTests {
 	
 	
 	
-	@Test
-	public void findAllPagedShouldReturnPage() {
-		Pageable pageable = PageRequest.of(0,10);
-		Page<ProductDTO> result = service.findAllPaged(pageable);
-		
-		Assertions.assertNotNull(result);
-		Mockito.verify(repository, Mockito.times(1)).findAll(pageable);
-		
-	}
+//	@Test
+//	public void findAllPagedShouldReturnPage() {
+//		Pageable pageable = PageRequest.of(0,10);
+//		Page<ProductDTO> result = service.findAllPaged(pageable);
+//		
+//		Assertions.assertNotNull(result);
+//		Mockito.verify(repository, Mockito.times(1)).findAll(pageable);
+//		
+//	}
 	
 	@Test
 	public void deleteShouldDoNothingWhenIdExists() {
